@@ -49,7 +49,9 @@ li,
 .skill-right,
 .projects-container,
 .contact-container,
+.image-container,
 .contact-form,
+form,
 footer,
 .footer-nav {
   /* border: 1px solid white; */
@@ -70,7 +72,7 @@ header {
 
 header.sticky {
   padding: 5px 100px;
-  background-color: #ffbd39;
+  background-color: #faf5e7;
 }
 
 header .logo {
@@ -111,6 +113,12 @@ header ul .li .a {
 header.sticky .logo,
 header.sticky ul .li .a {
   color: #000;
+}
+
+@media (max-width: 720px) {
+  header {
+    gap: unset;
+  }
 }
 
 /* DETAILS CONTAINER */
@@ -243,6 +251,14 @@ h2 {
   font-size: 50px;
   color: #ffbd39;
   margin-bottom: 10px;
+}
+
+@media (max-width: 720px) {
+  .wd,
+  .ph,
+  .sql {
+    width: 50%;
+  }
 }
 
 /* SKILLS */
@@ -395,12 +411,12 @@ h6 {
   cursor: pointer;
 }
 
-/* @media (max-width: 720px) {
+@media (max-width: 720px) {
   .contact-container {
     flex-direction: column;
     flex-wrap: wrap;
   }
-} */
+}
 
 /* FOOTER */
 
