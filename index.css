@@ -32,7 +32,11 @@ li,
 .contact-form,
 footer,
 .footer-nav {
-  /* border: 1px solid white; */
+  border: 1px solid white;
+}
+
+a {
+  text-decoration: none;
 }
 
 h4 {
@@ -206,11 +210,7 @@ h6 {
 /* PROJECTS */
 
 .projects-container {
-  background: url(./resources/work-in-progress.jpg) no-repeat center center;
-  /* DELETE WHEN ADDED ITEMS*/
-  width: 1280px;
-  height: 600px;
-  /* DELETE WHEN ADDED ITEMS*/
+  gap: 30px;
 }
 
 .pr-background {
@@ -222,24 +222,29 @@ h6 {
   height: 280px;
 }
 
-.pr-hide {
+.overlay {
   opacity: 0;
+  width: inherit;
+  height: inherit;
 }
 
-.pr-hide:hover {
+.overlay:hover {
   background-color: #ffbd39;
-  text-decoration: none;
   text-align: center;
   z-index: 1;
   opacity: 80%;
   transition: 0.2s;
 }
 
+.pr-text {
+  gap: 14px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
 @media (max-width: 720px) {
   .projects-container {
-    /* DELETE WHEN ADDED ITEMS*/
-    width: 540px;
-    /* DELETE WHEN ADDED ITEMS*/
   }
 }
 
