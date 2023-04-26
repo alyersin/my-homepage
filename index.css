@@ -32,7 +32,7 @@ li,
 .contact-form,
 footer,
 .footer-nav {
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 h4 {
@@ -166,7 +166,7 @@ h2 {
 .sql:hover {
   background-color: #ffbd39;
   color: #222;
-  transition: none;
+  transition: 0.3s;
 }
 
 /* SKILLS */
@@ -206,11 +206,33 @@ h6 {
 /* PROJECTS */
 
 .projects-container {
-  background: url(./resources/work-in-progress.jpg) no-repeat center;
+  background: url(./resources/work-in-progress.jpg) no-repeat center center;
   /* DELETE WHEN ADDED ITEMS*/
   width: 1280px;
   height: 600px;
   /* DELETE WHEN ADDED ITEMS*/
+}
+
+.pr-background {
+  background-image: url(./resources/project-rentcar.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 280px;
+  height: 280px;
+}
+
+.pr-hide {
+  opacity: 0;
+}
+
+.pr-hide:hover {
+  background-color: #ffbd39;
+  text-decoration: none;
+  text-align: center;
+  z-index: 1;
+  opacity: 80%;
+  transition: 0.2s;
 }
 
 @media (max-width: 720px) {
