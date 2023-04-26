@@ -87,12 +87,12 @@ header ul {
   position: relative;
 }
 
-header ul li {
+header ul .li {
   position: relative;
   list-style: none;
 }
 
-header ul li a {
+header ul .li .a {
   position: relative;
   margin: 0 15px;
   text-decoration: none;
@@ -109,7 +109,7 @@ header ul li a {
 }
 
 header.sticky .logo,
-header.sticky ul li a {
+header.sticky ul .li .a {
   color: #000;
 }
 
@@ -237,6 +237,12 @@ h2 {
   background-color: #ffbd39;
   color: #222;
   transition: 0.3s;
+}
+
+.fa {
+  font-size: 50px;
+  color: #ffbd39;
+  margin-bottom: 10px;
 }
 
 /* SKILLS */
