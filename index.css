@@ -16,6 +16,7 @@ body {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 li {
@@ -36,6 +37,8 @@ img {
 }
 
 header,
+.navbar,
+.nav-branding,
 section,
 ul,
 li,
@@ -59,63 +62,94 @@ footer,
 
 /* HEADER */
 
+/* edit */
+
 header {
   position: fixed;
+  background-color: black;
   top: 0;
   left: 0;
-  gap: 500px;
   width: 100%;
   transition: 0.6s;
   padding: 40px 100px;
   z-index: 100000;
 }
 
-header.sticky {
-  padding: 5px 100px;
-  background-color: #faf5e7;
+.nav-menu {
+  align-items: center;
+  gap: 60px;
 }
 
-header .logo {
-  position: relative;
-  font-weight: 800;
-  color: #fff;
-  text-decoration: none;
-  font-size: 3em;
-  text-transform: uppercase;
-  transform: 0.6s;
+.nav-branding {
+  font-size: 2rem;
 }
 
-header ul {
-  position: relative;
+.nav-link {
+  transition: 0.7s ease;
 }
 
-header ul .li {
-  position: relative;
-  list-style: none;
+.nav-link:hover {
+  color: #ffbd39;
 }
 
-header ul .li .a {
-  position: relative;
-  margin: 0 15px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500px;
-  transform: 0.6s;
+.hamburger {
+  display: none;
+  cursor: pointer;
 }
 
-.banner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  border-radius: 14px;
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: white;
 }
 
-header.sticky .logo,
-header.sticky ul .li .a {
-  color: #000;
+@media (min-width: 1280px) {
+  .navbar {
+    width: 1280px;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 24px;
+  }
 }
 
 @media (max-width: 720px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active.bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active.bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active.bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .navbar {
+    align-items: center;
+    min-height: 70px;
+    width: 100%;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 120px;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
   header {
     gap: unset;
   }
@@ -178,6 +212,7 @@ h4 {
   .left-right {
     flex-direction: column;
     flex-wrap: wrap;
+    margin-bottom: 160px;
   }
 }
 
@@ -195,13 +230,13 @@ h4 {
 }
 
 @media (max-width: 720px) {
-  .sspc-container,
-  .wps {
+  .sspc-container {
     flex-direction: column;
     flex-wrap: wrap;
   }
   .wps {
     flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     align-items: center;
