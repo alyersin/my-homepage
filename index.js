@@ -1,8 +1,3 @@
-window.addEventListener("scroll", () => {
-  let header = document.querySelector("header");
-  header.classList.toggle("sticky", window.scrollY > 0);
-});
-
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 

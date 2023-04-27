@@ -57,12 +57,10 @@ li,
 form,
 footer,
 .footer-nav {
-  /* border: 1px solid white; */
+  border: 1px solid white;
 }
 
 /* HEADER */
-
-/* edit */
 
 header {
   position: fixed;
@@ -102,7 +100,7 @@ header {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: white;
 }
 
@@ -128,10 +126,16 @@ header {
   .hamburger.active.bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+  header {
+    width: 100%;
+  }
   .navbar {
     align-items: center;
     min-height: 70px;
-    width: 100%;
+    width: fit-content;
+    margin: auto;
+    padding: auto;
+    gap: 94px;
   }
   .nav-menu {
     position: fixed;
@@ -149,9 +153,6 @@ header {
   }
   .nav-menu.active {
     left: 0;
-  }
-  header {
-    gap: unset;
   }
 }
 
