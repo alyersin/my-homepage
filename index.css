@@ -503,12 +503,16 @@ h6 {
   .contact-container {
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
   }
   h2 {
     font-size: 60px;
   }
   h3 {
     font-size: 30px;
+  }
+  .form-control {
+    width: 100%;
   }
 }
 
@@ -531,4 +535,21 @@ footer {
   height: auto;
   font-size: 22px;
   gap: 6px;
+}
+
+@media (max-width: 720px) {
+  footer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .form-control {
+    width: 100%;
+  }
 }
