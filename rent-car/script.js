@@ -1,8 +1,16 @@
+//INTEGRATED GEOLOCATION API
+const successCallback = (position) => {
+  console.log(position);
+};
+const errorCallback = (error) => {
+  console.log(error);
+};
+navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+
+//NAV EXTENSION
 const burgerBtn = document.querySelector(".burger");
 const navPanel = document.querySelector(".nav-map");
 const overLay = document.querySelector("overlay");
-
-//NAV EXTENSION
 
 const hidden = () => {
   if (navPanel.classList.contains("hide")) {
