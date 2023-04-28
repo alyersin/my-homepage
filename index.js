@@ -50,6 +50,9 @@ const geoLocation = async (id) => {
   try {
     const res = await axios.get(`https://ipapi.co/json/`);
     console.log(res.data);
+    const { ip, network, city } = res.data;
+    console.log(city);
+    console.log(ip);
   } catch (e) {
     console.log("ERR", e);
   }
