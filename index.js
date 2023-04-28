@@ -12,3 +12,24 @@ document.querySelectorAll(".nav-link").forEach((n) =>
     navMenu.classList.remove("active");
   })
 );
+
+//GEOLOCATION API
+const successCallback = (position) => {
+  console.log(position);
+};
+const errorCallback = (error) => {
+  console.log(error);
+};
+navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+
+//WEATHER API
+const weather = async (id) => {
+  try {
+    const res = await axios.get(`http://ip-api.com/json/?fields=61439`);
+    console.log(res.data);
+  } catch (e) {
+    console.log("ERR", e);
+  }
+};
+
+weather();
