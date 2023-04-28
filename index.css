@@ -60,7 +60,7 @@ li,
 form,
 footer,
 .footer-nav {
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 /* HEADER */
@@ -131,9 +131,6 @@ header {
   .hamburger.active.bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  header {
-    position: relative;
-  }
   .navbar {
     align-items: center;
     min-height: 70px;
@@ -157,7 +154,7 @@ header {
     display: flex;
     justify-content: center;
     margin: auto;
-    width: auto;
+    width: 100%;
     gap: 10px;
     left: 0;
   }
@@ -542,6 +539,8 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
+    height: auto;
+    gap: 16px;
   }
   h2 {
     font-size: 60px;
