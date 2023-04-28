@@ -57,7 +57,7 @@ li,
 form,
 footer,
 .footer-nav {
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 /* HEADER */
@@ -358,6 +358,14 @@ h6 {
   background-position: center center;
   width: 280px;
   height: 280px;
+}
+
+.pr-background:nth-child(2) {
+  background-image: url(./resources//under-construction.jpg);
+}
+
+.pr-background:nth-child(3) {
+  background-image: url(./resources//under-construction.jpg);
 }
 
 .overlay {
