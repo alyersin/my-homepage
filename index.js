@@ -25,7 +25,9 @@ navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
 //WEATHER API
 const weather = async (id) => {
   try {
-    const res = await axios.get(`http://ip-api.com/json/?fields=61439`);
+    const res = await axios.get(
+      `https://api.open-meteo.com/v1/forecast?latitude=44.18&longitude=28.63&hourly=temperature_2m`
+    );
     console.log(res.data);
   } catch (e) {
     console.log("ERR", e);
