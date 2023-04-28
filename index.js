@@ -46,15 +46,15 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 
 //FREE GEOLOCATION API
 
-const gpslocation = async (id) => {
+const geoLocation = async (id) => {
   try {
-    const res = await axios.get(`http://ip-api.com/json/?fields=61439`);
+    const res = await axios.get(`https://ipapi.co/json/`);
     console.log(res.data);
   } catch (e) {
     console.log("ERR", e);
   }
 };
-gpslocation();
+geoLocation();
 
 //WEATHER API
 // const weather = async (id) => {
