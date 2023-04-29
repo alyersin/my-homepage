@@ -25,10 +25,6 @@ li {
   font-size: 20px;
 }
 
-.orange {
-  color: #ffbd39;
-}
-
 img {
   margin: auto;
   width: 100%;
@@ -238,6 +234,12 @@ h4 {
   }
   .gray {
     font-size: 12px;
+  }
+  .dl-cv {
+    font-size: 12px;
+  }
+  .info {
+    font-size: 18px;
   }
 }
 
@@ -522,6 +524,9 @@ h6 {
   .form-control {
     width: 100%;
   }
+  .submit {
+    font-size: 12px;
+  }
 }
 
 /* FOOTER */
@@ -561,5 +566,9 @@ footer {
   }
   .form-control {
     width: 100%;
+  }
+  .copyright,
+  .footer-menu {
+    font-size: 14px;
   }
 }
