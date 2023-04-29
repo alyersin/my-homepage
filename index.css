@@ -153,10 +153,13 @@ header {
   .nav-menu.active {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin: auto;
     width: 100%;
-    gap: 10px;
     left: 0;
+  }
+  .nav-link {
+    font-size: 14px;
   }
 }
 
@@ -364,9 +367,13 @@ h6 {
     justify-content: center;
     flex-wrap: wrap;
     padding: 10px;
+    width: 100%;
+  }
+  .progress-bar {
+    width: 200px;
   }
   h6 {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
   }
 }
@@ -445,6 +452,13 @@ h6 {
   font-weight: 400;
   font-size: 1rem;
   color: #999999;
+}
+
+@media (max-width: 720px) {
+  .freelance {
+    text-align: center;
+    font-size: 2rem;
+  }
 }
 
 /* CONTACT */
