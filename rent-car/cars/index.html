@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/flex-settings.css" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Cars</title>
+  </head>
+
+  <body>
+    <!-- CARS DISPLAY SECTION -->
+
+    <div class="car-background">
+      <section class="cars-section flex">
+        <!-- LEFT SECTION -->
+
+        <aside class="left-container flex column">
+          <div class="flex justify-e">
+            <button class="reset-filter">Reset filter</button>
+          </div>
+
+          <div class="vehicle-type flex justify-s">
+            <h4>Vehicle type</h4>
+          </div>
+
+          <div class="list-car-type flex column">
+            <button class="sedan flex row">
+              <img
+                src="./resources/cars/sedan-car-13311.svg"
+                class="car-icon"
+                alt=""
+              />
+              Sedan
+            </button>
+            <button class="suv flex row">
+              <img
+                src="./resources/cars/suv-car-13321.svg"
+                class="car-icon"
+                alt=""
+              />
+              SUV
+            </button>
+            <button class="coupe flex row">
+              <img
+                src="./resources/cars/coupe-car-13313.svg"
+                class="car-icon"
+                alt=""
+              />
+              Coupe
+            </button>
+            <button class="convertible flex row">
+              <img
+                src="./resources/cars/roadster-car-13317.svg"
+                class="car-icon"
+                alt=""
+              />
+              Convertible
+            </button>
+            <button class="stationWagon flex row">
+              <img
+                src="./resources/cars/station-car-13315.svg"
+                class="car-icon"
+                alt=""
+              />
+              Station wagon
+            </button>
+            <button class="passengerVan flex row">
+              <img
+                src="./resources/cars/passenger-van-13330.svg"
+                class="car-icon"
+                alt=""
+              />
+              Passenger van
+            </button>
+            <button class="luxuryVehicle flex row">
+              <img
+                src="./resources/cars/limousine-car-13324.svg"
+                class="car-icon"
+                alt=""
+              />
+              Luxury vehicle
+            </button>
+          </div>
+
+          <hr />
+
+          <!-- AUTOMATIC TOGGLE -->
+
+          <div class="automatic-container flex justify-b">
+            <h4 class="flex">Automatic only</h4>
+            <label class="switch flex">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+
+          <hr />
+
+          <!-- PASSENGER FILTER -->
+
+          <div>
+            <div class="passengers flex justify-s">
+              <h4>Passengers</h4>
+            </div>
+
+            <div class="counter-wrapper flex column">
+              <div class="counter flex justify-b">
+                <span>2+</span>
+                <span>4+</span>
+                <span>5+</span>
+                <span>7+</span>
+              </div>
+
+              <div class="flex justify-c">
+                <div class="slidecontainer">
+                  <input
+                    type="range"
+                    min="2"
+                    max="5"
+                    value="2"
+                    class="sliderPass"
+                    id="myRange"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- BAG FILTER -->
+
+          <div>
+            <div class="passengers flex justify-s">
+              <h4>Bags</h4>
+            </div>
+
+            <div class="counter-wrapper flex column">
+              <div class="counter flex justify-b">
+                <span>1+</span>
+                <span>2+</span>
+                <span>3+</span>
+                <span>4+</span>
+              </div>
+
+              <div class="flex justify-c">
+                <div class="slidecontainer">
+                  <input
+                    type="range"
+                    min="2"
+                    max="5"
+                    value="2"
+                    class="sliderPass"
+                    id="myRange"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- RIGHT SECTION -->
+
+        <aside class="right-container flex justify-s row wrap">
+          <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <p class="h1">CAR INFORMATION</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="overlay hidden"></div>
+
+          <div class="car-container flex column manual sedan five-seat two-bag">
+            <div class="flex column">
+              <h5>Dacia Logan</h5>
+              <p class="car-type">Sedan</p>
+            </div>
+
+            <div class="img-container">
+              <img
+                src="./resources/cars/dacia-logan.png"
+                alt="Dacia Logan"
+                class="car-img"
+              />
+            </div>
+
+            <ul class="car-info flex row">
+              <li class="flex column">
+                <img src="./resources/cars/ppl.svg" class="icons" alt="" /> 5
+                seater
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/gearbox.svg" class="icons" alt="" />
+                Manual
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/bag.svg" class="icons" alt="" /> 2
+                Bags
+              </li>
+            </ul>
+
+            <div class="price flex column">
+              <h6>$60.50 /day</h6>
+              <h5>$210.50 total</h5>
+            </div>
+          </div>
+
+          <div
+            class="car-container flex column manual sedan five-seat three-bag"
+          >
+            <div class="flex column">
+              <h5>Opel Astra</h5>
+              <p class="car-type">Sedan</p>
+            </div>
+
+            <div class="img-container">
+              <img
+                src="./resources/cars/opel-astra.png"
+                alt="Astra"
+                class="car-img"
+              />
+            </div>
+
+            <ul class="car-info flex row">
+              <li class="flex column">
+                <img src="./resources/cars/ppl.svg" class="icons" alt="" /> 5
+                seater
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/gearbox.svg" class="icons" alt="" />
+                Manual
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/bag.svg" class="icons" alt="" /> 3
+                Bags
+              </li>
+            </ul>
+
+            <div class="price flex column">
+              <h6>$60.50 /day</h6>
+              <h5>$210.50 total</h5>
+            </div>
+          </div>
+
+          <div
+            class="car-container flex column manual sedan five-seat three-bag"
+          >
+            <div class="flex column">
+              <h5>Ford Mondeo</h5>
+              <p class="car-type">Sedan</p>
+            </div>
+
+            <div class="img-container">
+              <img
+                src="./resources/cars/ford-mondeo.png"
+                alt="Mondeo"
+                class="car-img"
+              />
+            </div>
+
+            <ul class="car-info flex row">
+              <li class="flex column">
+                <img src="./resources/cars/ppl.svg" class="icons" alt="" /> 5
+                seater
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/gearbox.svg" class="icons" alt="" />
+                Manual
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/bag.svg" class="icons" alt="" /> 3
+                Bags
+              </li>
+            </ul>
+
+            <div class="price flex column">
+              <h6>$60.50 /day</h6>
+              <h5>$210.50 total</h5>
+            </div>
+          </div>
+
+          <div
+            class="car-container flex column automatic sedan five-seat three-bag"
+          >
+            <div class="flex column">
+              <h5>Opel Insignia Aut.</h5>
+              <p class="car-type">Sedan</p>
+            </div>
+
+            <div class="img-container">
+              <img
+                src="./resources/cars/opel-insignia-grand-sport.png"
+                alt="Insignia"
+                class="car-img"
+              />
+            </div>
+
+            <ul class="car-info flex row">
+              <li class="flex column">
+                <img src="./resources/cars/ppl.svg" class="icons" alt="" /> 5
+                seater
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/gearbox.svg" class="icons" alt="" />
+                Automatic
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/bag.svg" class="icons" alt="" /> 3
+                Bags
+              </li>
+            </ul>
+
+            <div class="price flex column">
+              <h6>$60.50 /day</h6>
+              <h5>$210.50 total</h5>
+            </div>
+          </div>
+
+          <div
+            class="car-container flex column automatic sedan five-seat three-bag"
+          >
+            <div class="flex column">
+              <h5>Mercedes Benz C-Class</h5>
+              <p class="car-type">Sedan</p>
+            </div>
+
+            <div class="img-container">
+              <img
+                src="./resources/cars/mercedes-c.png"
+                alt="Mercedes C-Class"
+                class="car-img"
+              />
+            </div>
+
+            <ul class="car-info flex row">
+              <li class="flex column">
+                <img src="./resources/cars/ppl.svg" class="icons" alt="" /> 5
+                seater
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/gearbox.svg" class="icons" alt="" />
+                Automatic
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/bag.svg" class="icons" alt="" /> 3
+                Bags
+              </li>
+            </ul>
+
+            <div class="price flex column">
+              <h6>$60.50 /day</h6>
+              <h5>$210.50 total</h5>
+            </div>
+          </div>
+
+          <div class="car-container flex column manual suv five-seat seven-bag">
+            <div class="flex column">
+              <h5>Ford Kuga</h5>
+              <p class="car-type">SUV</p>
+            </div>
+
+            <div class="img-container">
+              <img
+                src="./resources/cars/ford-kuga.png"
+                alt="Mercedes C-Class"
+                class="car-img"
+              />
+            </div>
+
+            <ul class="car-info flex row">
+              <li class="flex column">
+                <img src="./resources/cars/ppl.svg" class="icons" alt="" /> 5
+                seater
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/gearbox.svg" class="icons" alt="" />
+                Manual
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/bag.svg" class="icons" alt="" /> 7
+                Bags
+              </li>
+            </ul>
+
+            <div class="price flex column">
+              <h6>$60.50 /day</h6>
+              <h5>$210.50 total</h5>
+            </div>
+          </div>
+
+          <div
+            class="car-container flex column manual passengerVan seven-seat five-bag"
+          >
+            <div class="flex column">
+              <h5>Opel Zafira</h5>
+              <p class="car-type">Van</p>
+            </div>
+
+            <div class="img-container">
+              <img
+                src="./resources/cars/opel-zafira.png"
+                alt="Zafira"
+                class="car-img"
+              />
+            </div>
+
+            <ul class="car-info flex row">
+              <li class="flex column">
+                <img src="./resources/cars/ppl.svg" class="icons" alt="" /> 7
+                seater
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/gearbox.svg" class="icons" alt="" />
+                Manual
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/bag.svg" class="icons" alt="" /> 5
+                Bags
+              </li>
+            </ul>
+
+            <div class="price flex column">
+              <h6>$60.50 /day</h6>
+              <h5>$210.50 total</h5>
+            </div>
+          </div>
+
+          <div
+            class="car-container flex column automatic passengerVan eight-seat five-bag"
+          >
+            <div class="flex column">
+              <h5>Renault Traffic</h5>
+              <p class="car-type">Van</p>
+            </div>
+
+            <div class="img-container">
+              <img
+                src="./resources/cars/renault-trafic-van.png"
+                alt="traffic"
+                class="car-img"
+              />
+            </div>
+
+            <ul class="car-info flex row">
+              <li class="flex column">
+                <img src="./resources/cars/ppl.svg" class="icons" alt="" /> 8
+                seater
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/gearbox.svg" class="icons" alt="" />
+                Automatic
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/bag.svg" class="icons" alt="" /> 5
+                Bags
+              </li>
+            </ul>
+
+            <div class="price flex column">
+              <h6>$60.50 /day</h6>
+              <h5>$210.50 total</h5>
+            </div>
+          </div>
+
+          <div
+            class="car-container flex column manual stationWagon five-seat three-bag"
+          >
+            <div class="flex column">
+              <h5>Ford Focus Combi</h5>
+              <p class="car-type">Station wagon</p>
+            </div>
+
+            <div class="img-container">
+              <img
+                src="./resources/cars/ford-focus-combi.png"
+                alt="Mercedes C-Class"
+                class="car-img"
+              />
+            </div>
+
+            <ul class="car-info flex row">
+              <li class="flex column">
+                <img src="./resources/cars/ppl.svg" class="icons" alt="" /> 5
+                seater
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/gearbox.svg" class="icons" alt="" />
+                Manual
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/bag.svg" class="icons" alt="" /> 3
+                Bags
+              </li>
+            </ul>
+
+            <div class="price flex column">
+              <h6>$60.50 /day</h6>
+              <h5>$210.50 total</h5>
+            </div>
+          </div>
+
+          <div
+            class="car-container flex column automatic suv five-seat four-bag"
+          >
+            <div class="flex column">
+              <h5>Mercedes Benz GLC</h5>
+              <p class="car-type">SUV</p>
+            </div>
+
+            <div class="img-container">
+              <img
+                src="./resources/cars/mercedes-glc.png"
+                alt="glc"
+                class="car-img"
+              />
+            </div>
+
+            <ul class="car-info flex row">
+              <li class="flex column">
+                <img src="./resources/cars/ppl.svg" class="icons" alt="" /> 5
+                seater
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/gearbox.svg" class="icons" alt="" />
+                Automatic
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/bag.svg" class="icons" alt="" /> 4
+                Bags
+              </li>
+            </ul>
+
+            <div class="price flex column">
+              <h6>$60.50 /day</h6>
+              <h5>$210.50 total</h5>
+            </div>
+          </div>
+
+          <div
+            class="car-container flex column manual convertible four-seat one-bag"
+          >
+            <div class="flex column">
+              <h5>MINI Cabrio</h5>
+              <p class="car-type">Cabriolet</p>
+            </div>
+
+            <div class="img-container">
+              <img
+                src="./resources/cars/mini-cabrio.png"
+                alt="mini"
+                class="car-img"
+              />
+            </div>
+
+            <ul class="car-info flex row">
+              <li class="flex column">
+                <img src="./resources/cars/ppl.svg" class="icons" alt="" /> 4
+                seater
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/gearbox.svg" class="icons" alt="" />
+                Manual
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/bag.svg" class="icons" alt="" /> 1
+                Bag
+              </li>
+            </ul>
+
+            <div class="price flex column">
+              <h6>$60.50 /day</h6>
+              <h5>$210.50 total</h5>
+            </div>
+          </div>
+
+          <div
+            class="car-container flex column automatic coupe four-seat two-bag"
+          >
+            <div class="flex column">
+              <h5>Audi A5</h5>
+              <p class="car-type">Coupe</p>
+            </div>
+
+            <div class="img-container">
+              <img
+                src="./resources/cars/audi-coupe.png"
+                alt="audi"
+                class="car-img"
+              />
+            </div>
+
+            <ul class="car-info flex row">
+              <li class="flex column">
+                <img src="./resources/cars/ppl.svg" class="icons" alt="" /> 4
+                seater
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/gearbox.svg" class="icons" alt="" />
+                Automatic
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/bag.svg" class="icons" alt="" /> 2
+                Bags
+              </li>
+            </ul>
+
+            <div class="price flex column">
+              <h6>$60.50 /day</h6>
+              <h5>$210.50 total</h5>
+            </div>
+          </div>
+
+          <div
+            class="car-container flex column automatic luxuryVehicle sedan five-seat four-bag"
+          >
+            <div class="flex column">
+              <h5>Mercedes Benz S-Class</h5>
+              <p class="car-type">Sedan</p>
+            </div>
+
+            <div class="img-container">
+              <img
+                src="./resources/cars/mercedes-s-class.png"
+                alt="mercedes"
+                class="car-img"
+              />
+            </div>
+
+            <ul class="car-info flex row">
+              <li class="flex column">
+                <img src="./resources/cars/ppl.svg" class="icons" alt="" /> 5
+                seater
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/gearbox.svg" class="icons" alt="" />
+                Automatic
+              </li>
+              <li class="flex column">
+                <img src="./resources/cars/bag.svg" class="icons" alt="" /> 4
+                Bags
+              </li>
+            </ul>
+
+            <div class="price flex column">
+              <h6>$60.50 /day</h6>
+              <h5>$210.50 total</h5>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

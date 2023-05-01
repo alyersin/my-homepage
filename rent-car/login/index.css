@@ -3,10 +3,10 @@
 }
 
 body {
-  /* background-image: url("/rent-car/resources/login_cover2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
+  background-image: url("/rent-car/resources/login_cover2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   background-color: #064157;
 }
 
