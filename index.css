@@ -35,6 +35,8 @@ img {
 header,
 .navbar,
 .nav-branding,
+.nav-menu,
+.hamburger,
 section,
 ul,
 li,
@@ -71,6 +73,10 @@ header {
   transition: 0.6s;
   padding: 40px 100px;
   z-index: 100000;
+}
+
+.navbar {
+  gap: 94px;
 }
 
 .nav-menu {
@@ -121,6 +127,15 @@ header {
     height: 80px;
     padding: unset;
   }
+  .navbar {
+    align-items: center;
+    min-height: 70px;
+    width: 100%;
+    gap: unset;
+  }
+  .nav-branding {
+    font-size: 1.5rem;
+  }
   .hamburger {
     display: block;
   }
@@ -133,15 +148,10 @@ header {
   .hamburger.active.bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  .navbar {
-    align-items: center;
-    min-height: 70px;
-    /* gap: 94px; */
-  }
   .nav-menu {
     position: fixed;
     left: -200%;
-    top: 120px;
+    top: 80px;
     gap: 0;
     flex-direction: column;
     background-color: black;
