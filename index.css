@@ -56,7 +56,7 @@ li,
 form,
 footer,
 .footer-nav {
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 /* HEADER */
@@ -116,6 +116,11 @@ header {
 }
 
 @media (max-width: 720px) {
+  header {
+    width: 100%;
+    height: 80px;
+    padding: unset;
+  }
   .hamburger {
     display: block;
   }
@@ -131,7 +136,7 @@ header {
   .navbar {
     align-items: center;
     min-height: 70px;
-    gap: 94px;
+    /* gap: 94px; */
   }
   .nav-menu {
     position: fixed;
