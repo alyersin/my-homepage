@@ -58,7 +58,7 @@ li,
 form,
 footer,
 .footer-nav {
-  /* border: 1px solid white; */
+  border: 1px solid white;
 }
 
 /* HEADER */
@@ -131,7 +131,6 @@ header {
     align-items: center;
     min-height: 70px;
     width: 100%;
-    gap: unset;
   }
   .nav-branding {
     font-size: 1.5rem;
@@ -152,7 +151,7 @@ header {
     position: fixed;
     left: -200%;
     top: 80px;
-    gap: 0;
+    gap: unset;
     flex-direction: column;
     background-color: black;
     width: 100%;
