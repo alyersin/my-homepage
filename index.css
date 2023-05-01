@@ -56,7 +56,7 @@ li,
 form,
 footer,
 .footer-nav {
-  /* border: 1px solid white; */
+  border: 1px solid white;
 }
 
 /* HEADER */
@@ -310,12 +310,6 @@ h2 {
   transition: 0.3s;
 }
 
-.fa {
-  font-size: 50px;
-  color: #ffbd39;
-  margin-bottom: 10px;
-}
-
 @media (max-width: 720px) {
   .wps {
     width: 100%;
@@ -325,8 +319,9 @@ h2 {
   .wd,
   .ph,
   .sql {
-    width: 60%;
-    height: 100%;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
     font-size: 20px;
     padding: 22px 0 22px 0;
     gap: 5px;
@@ -352,7 +347,7 @@ h6 {
   border: 5px solid #212529;
   line-height: 20px;
   margin: auto;
-  width: 25vw;
+  width: 440px;
 }
 
 .progress-bar-color {

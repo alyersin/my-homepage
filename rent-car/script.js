@@ -316,37 +316,38 @@ switchAuto.addEventListener("click", () => {
 
 // PASSENGER FILTER
 
-// const passSlider = document.querySelector(".sliderPass");
+const passSlider = document.querySelector(".sliderPass");
 
-// const sliderValue = (passSlider.oninput = () => {
-//     console.log(passSlider.value);
-// });
+const sliderValue = (passSlider.oninput = () => {
+  console.log(passSlider.value);
+});
 
-// passSlider.addEventListener("click", () => {
-//     if ((sliderValue.value = 3)) {
-//         console.log("YESSSSS");
-//         document.querySelectorAll(".car-container").forEach((element) => {
-//             if (element.classList.contains("four-seat")) {
-//                 element.classList.remove("hide");
-//                 element.classList.add("flex");
-//             } else {
-//                 element.classList.add("hide");
-//                 element.classList.remove("flex");
-//             }
-//         });
-//     } else if ((sliderValue.value = 4)) {
-//         document.querySelectorAll(".car-container").forEach((element) => {
-//             if (element.classList.contains("five-seat")) {
-//                 element.classList.remove("hide");
-//                 element.classList.add("flex");
-//             } else {
-//                 element.classList.add("hide");
-//                 element.classList.remove("flex");
-//             }
-//         });
-//         console.log("NOOOOO");
-//     } else {}
-// });
+passSlider.addEventListener("click", () => {
+  if ((sliderValue.value = 3)) {
+    console.log("YESSSSS");
+    document.querySelectorAll(".car-container").forEach((element) => {
+      if (element.classList.contains("four-seat")) {
+        element.classList.remove("hide");
+        element.classList.add("flex");
+      } else {
+        element.classList.add("hide");
+        element.classList.remove("flex");
+      }
+    });
+  } else if ((sliderValue.value = 4)) {
+    document.querySelectorAll(".car-container").forEach((element) => {
+      if (element.classList.contains("five-seat")) {
+        element.classList.remove("hide");
+        element.classList.add("flex");
+      } else {
+        element.classList.add("hide");
+        element.classList.remove("flex");
+      }
+    });
+    console.log("NOOOOO");
+  } else {
+  }
+});
 
 // CAR INFO POPUP
 
